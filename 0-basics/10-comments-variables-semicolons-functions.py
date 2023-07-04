@@ -1,16 +1,15 @@
 # This is a single line comment
 ##### This also works
-""" This is a multi-line comment
-    This is the second line"""
+""" This is just a multi-line string
+    But can be used as comments as well
+"""
 
-"""
-- VARIABLES are declared without a keyword
-- By convention, Python variables are in snake_case
-- Variable names cannot:
-    - Start with a number (1num)
-    - Include !, %
-    - Be equal to Python keywords
-"""
+# - VARIABLES are declared without a keyword
+# - By convention, Python variables are in snake_case
+# - Variable names cannot:
+    # - Start with a number (1num)
+    # - Include !, %
+    # - Be equal to Python keywords
 my_string = 'Hello World'
 my_num = 10
 # Variables can be reassigned later
