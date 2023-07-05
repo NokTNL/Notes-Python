@@ -1,7 +1,10 @@
-## User inputs
-# `input()` will wait for user's input in the command line and pause the code's execution. It returns a string. 
-user_input = input("Give me something:\n")
-print(user_input)
+# For buit-in modules, just use `import`
+import random
+
+# LISTS are basically arrays, defined with `[]`
+food = ['pizza', 'burger', 'pasta', 'sushi']
+# To get a random item from an array:
+my_choice = random.choice(food)
 
 # DICTIONARIES are like Javascript objects or maps, holding key-value pairs
 # It's declared with `{}`

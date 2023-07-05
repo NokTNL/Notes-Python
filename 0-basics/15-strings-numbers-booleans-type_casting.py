@@ -1,6 +1,11 @@
 # STRINGS can use single or double qoutes
 my_string = 'Hello World'
 my_string2 = "Hello World"
+# Multiline string
+my_multiline_str = """Hello
+World
+""" 
+
 # NUMBERS
 my_num = 4
 # Booleans
