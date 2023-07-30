@@ -5,7 +5,7 @@ b = 2
 a == 1 and b == 3 # False
 a == 1 or b == 3 # True
 a == 1 and not b == 2 # False; 
-# Shortcircuiting also work in Python, because `and` and `or` returns one of its operand
+# Short-circuiting also works in Python, because `and` and `or` returns one of its operand
 def say_word(str):
     print(str)
 [] and say_word('and') # [] <-- this is False, so won't say the word

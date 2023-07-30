@@ -5,6 +5,6 @@ complex_num = complex(1, 2) # Using the `complex()` constructor works as well
 print(type(complex_num)) # <class 'complex'>
 print(complex_num.real, complex_num.imag) # 1.0 2.0
 
-# Built-in number functions
+# Built-in math functions
 print(abs(-1)) # 1
 print(round(1.50)) # 2

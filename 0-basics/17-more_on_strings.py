@@ -9,6 +9,9 @@ print("Hello World " + my_string + "!")
 my_num = 25
 print(f"I'm {my_num} years old!")
 
+# Strings are immutable
+'abcde'[1] = 'z' # TypeError: 'str' object does not support item assignment
+
 # String methods
 # They all return a new string and not modifying the original string
 print("beau".upper()) # BEAU

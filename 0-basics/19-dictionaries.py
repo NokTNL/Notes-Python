@@ -1,11 +1,3 @@
-# For buit-in modules, just use `import`
-import random
-
-# LISTS are basically arrays, defined with `[]`
-food = ['pizza', 'burger', 'pasta', 'sushi']
-# To get a random item from an array:
-my_choice = random.choice(food)
-
 # DICTIONARIES are like Javascript objects or maps, holding key-value pairs
 # It's declared with `{}`
 # Both strings and numbers can be keys
