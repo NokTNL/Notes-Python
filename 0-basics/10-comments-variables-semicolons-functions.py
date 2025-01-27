@@ -7,14 +7,17 @@
 # - VARIABLES are declared without a keyword
 # - By convention, Python variables are in snake_case
 # - Variable names cannot:
-    # - Start with a number (1num)
-    # - Include !, %
-    # - Be equal to Python keywords
+    # - start with a number (1num)
+    # - include !, %
+    # - be Python keywords
 my_string = 'Hello World'
 my_num = 10
 # Variables can be reassigned later
 my_string = "HAHAHAHAH"
 print(my_string) # HAHAHAHAH
+# Python uses dynamic types so variables can be reassigned a value with a different type
+my_string = 11
+print(type(my_string)) # <class 'int'>
 
 # SEMICOLONS are NOT needed in Python; A new line breaks a statement
 # However, you can use semicolons if you want to inlcude two statements in one line:

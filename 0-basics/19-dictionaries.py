@@ -1,4 +1,4 @@
-# DICTIONARIES are like Javascript objects or maps, holding key-value pairs
+# DICTIONARIES hold key-value pairs, looks very much like Javascript plain objects
 # It's declared with `{}`
 # Both strings and numbers can be keys
 my_dict = {1 : 'one', 'two' : 2}

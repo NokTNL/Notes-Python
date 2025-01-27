@@ -1,4 +1,7 @@
-# LISTS are basically arrays, defined with `[]`
+#
+# List
+#
+# A list is collection of item (like an "array"), defined with `[]`
 food = ['pizza', 'burger', 'pasta', 'sushi']
 print(type(food)) # <class 'list'>
 # Check length with len()
@@ -6,7 +9,10 @@ print(len(food)) # 4
 # Item access using []
 print(food[1]) # burger
 print(food[-1]) # sushi; NEGATIVE index count from FIRST element as zero
-print(food[1:3]) # ['burger', 'pasta']; RANGE index returns a sub-array; includes 1 and STOPS BEFORE 3
+print(food[1:3]) # ['burger', 'pasta']; RANGE index returns a sub-array; it is [1, 3) (i.e. includes 1 and STOPS BEFORE 3)
+print(food[1:10]) # ['burger', 'pasta', 'sushi']; range indices bigger than the maximum are all treated as "beyond the end"
+print(food[:2]) # ['pizza', 'burger']; equivalent to [0:2]
+print(food[2:]) # ['pasta', 'sushi']; equivalent to [2:4]
 # Mutating items by direct assignment
 food[1] = 'ramen' 
 print(food[1]) # ramen
@@ -29,19 +35,16 @@ print(boys) # ['Tom', 'Paul', 'Julian', 'John']
 ### extend(): joining an array to the end
 boys.extend(['Karl', 'Sam']) 
 print(boys) # ['Tom', 'Paul', 'Julian', 'John', 'Karl', 'Sam']
-# An alternative is '+='
+# You can also use `+` on lists! (and '+=' by extension)
 boys += ['HA']
 print(boys) # ['Tom', 'Paul', 'Julian', 'John', 'Karl', 'Sam', 'HA']
 # !!! If you want to extend with a single string array (e.g. 'Sam') but forget the `[]`, the string will be added AS A LIST --> 'S', 'a', 'm'
 
-### Joining arrays with `+`
-print([1, 'A'] + [2, 'B']) # [1, 'A', 2, 'B']
-
-### remove(): remove an item from the array that matches the value
+### remove(): remove the first item that matches the value from the array 
 boys.remove('HA')
 print(boys) # ['Tom', 'Paul', 'Julian', 'John', 'Karl', 'Sam']
 
-### insert(): an ONE item at the specified index (i.e. it will appear at that index and push other items to the right)
+### insert(): add an item at the specified index (i.e. it will appear at that index and push other items to the right)
 boys.insert(2, 'INSERTED')
 print(boys) # ['Tom', 'Paul', 'INSERTED', 'Julian', 'John', 'Karl', 'Sam']
 
