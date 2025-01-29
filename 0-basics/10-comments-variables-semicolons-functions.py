@@ -33,3 +33,9 @@ def addNum(num1, num2):
 # Calling the function
 sum = addNum(1, 2)
 print(sum) # 3
+
+# We can use default arguments as well, but they must go LAST
+# Named arguments also possible
+def addNumWithDefault(num1, num2 = 0):
+    return num1 + num2
+print(addNumWithDefault(num1=3)) # 3; 3 + 0 = 0

@@ -6,3 +6,6 @@ my_dict = {1 : 'one', 'two' : 2}
 print(my_dict['two']) # '2'
 # Inlining access works as well:
 print({1: 'ONE'}[1]) # 'ONE'
+# Mutation
+my_dict['three'] = 3
+print(my_dict['three']) # 3
