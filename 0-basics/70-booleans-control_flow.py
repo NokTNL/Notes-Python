@@ -36,7 +36,9 @@ elif my_num == 0:
 else:
     print ('WTF')
 
-### Ternary operator
+#
+# Ternary operator
+#
 # In Python it looks like an inline if...else statement
 my_num2 = 9
 print('Yeah' if my_num2 == 10 else 'Nah')
@@ -44,3 +46,25 @@ print('Yeah' if my_num2 == 10 else 'Nah')
 # Checking if some / all list items are truthy
 print(any([False, None, "Hi"])) # True
 print(all([False, None, "Hi"])) # False
+
+#
+# While loop
+#
+i = 1
+while i <= 10:
+    print(f"while i is {i}")
+    i += 1
+
+#
+# For loop
+#
+# In Python, for loops always loop over a list
+for number in [1, 3, 5, 7]:
+    print(f"for number is {number}")
+# You can retreive the index as well
+for i, number in enumerate([1, 3, 5, 7]): # index, number is destructuring the tuple returned from `enumberate`
+    print(f"for index is {i} and number is {number}")
+# Probably easier to just use range(), which produces a list of [0, stop_index)
+for i in range(6):
+    print(f"for i is {i} in range(6)")
+# `break` and `continue` are available for `while` and `for` loops
